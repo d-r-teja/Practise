@@ -1,9 +1,10 @@
-import ExpenseItem from "./ExpenseItem";
+import ExpenseItem from './ExpenseItem';
 import './Expenses.css';
+import Card from '../UI/Card';
 
 function Expenses(props) {
     return (
-        <div className="expenses">
+        <Card className="expenses">
             <ExpenseItem
                 title={props.item[0].title}//props.expenses can be replaced with props.item
                 amount={props.item[0].amount}
@@ -24,7 +25,7 @@ function Expenses(props) {
                 amount={props.item[3].amount}
                 date={props.item[3].date}
             ></ExpenseItem>
-        </div>
+        </Card>
     );
 }
 
